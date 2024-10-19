@@ -54,3 +54,4 @@ C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Notification.Wpf.pdb
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Notification.Wpf.xml
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\App.baml

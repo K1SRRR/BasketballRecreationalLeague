@@ -143,8 +143,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controllers\LeagueController.cs" />
     <Compile Include="Controllers\PlayerController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
+    <Compile Include="Data\Repositories\LeagueRepository.cs" />
     <Compile Include="DTO\PlayerDTO.cs" />
+    <Compile Include="DTO\TeamDTO.cs" />
+    <Compile Include="DTO\TeamLeagueDTO.cs" />
+    <Compile Include="Models\Team.cs" />
+    <Compile Include="Models\TeamLeague.cs" />
+    <Compile Include="Services\LeagueService.cs" />
     <Compile Include="Services\PlayerService.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -201,6 +209,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\BL-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

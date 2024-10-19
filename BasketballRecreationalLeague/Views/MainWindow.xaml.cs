@@ -26,12 +26,18 @@ namespace BasketballRecreationalLeague.Views
         public MainWindow()
         {
             InitializeComponent();
-            LoadPlayers();
+            //LoadPlayers();
+            LoadTeams();
         }
-        private void LoadPlayers()
+        //private void LoadPlayers()
+        //{
+        //    //List<PlayerDTO> players = PlayerController.GetInstance().GetAll();
+        //    //PlayersDataGrid.ItemsSource = players;
+        //}
+        private void LoadTeams()
         {
-            List<PlayerDTO> players = PlayerController.GetInstance().GetAll();
-            PlayersDataGrid.ItemsSource = players;
+            List<TeamLeagueDTO> teamLeagueDTOs = LeagueController.GetInstance().GetAllTeams(1);
+            LeagueTeamsDataGrid.ItemsSource = teamLeagueDTOs;
         }
     }
 }

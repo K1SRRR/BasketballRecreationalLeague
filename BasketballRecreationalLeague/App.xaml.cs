@@ -35,6 +35,11 @@ namespace BasketballRecreationalLeague
             _services.AddSingleton<PlayerRepository>();
             _services.AddSingleton<PlayerService>();
             _services.AddSingleton<PlayerController>();
+            _services.AddSingleton<LeagueRepository>();
+            _services.AddSingleton<LeagueService>();
+            _services.AddSingleton<LeagueController>();
+
+            _services.AddSingleton<TeamController>();
 
             _serviceProvider = _services.BuildServiceProvider();
 
