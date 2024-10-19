@@ -1,5 +1,6 @@
 ﻿using BasketballRecreationalLeague.Data.Repositories;
 using BasketballRecreationalLeague.Models;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,15 +11,14 @@ namespace BasketballRecreationalLeague.Services
 {
     public class PlayerService
     {
-        private PlayerRepository _playerRepository;
-
-        public PlayerService()
+        public static PlayerService GetInstance()
         {
-            _playerRepository = new PlayerRepository();
+            return App._serviceProvider.GetRequiredService<PlayerService>();
         }
-        public List<Player> GetPlayers()
+        public PlayerService() { }
+        public List<Player> GetAll()
         {
-            return _playerRepository.GetAllPlayers();
+            return PlayerRepository.GetInstance().GetAll();
         }
     }
 }

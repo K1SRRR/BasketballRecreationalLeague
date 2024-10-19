@@ -34,11 +34,11 @@ C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\System.ValueTuple.xml
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague.csproj.AssemblyReference.cache
-C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\MainWindow.g.cs
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\Views\MainWindow.g.cs
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\App.g.cs
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague_MarkupCompile.cache
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague_MarkupCompile.lref
-C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\MainWindow.baml
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\Views\MainWindow.baml
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague.g.resources
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague.Properties.Resources.resources
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague.csproj.GenerateResource.cache
@@ -46,3 +46,11 @@ C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague.csproj.CopyComplete
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague.exe
 C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\obj\Debug\BasketballRecreationalLeague.pdb
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Notification.Wpf.dll
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Notification.Wpf.pdb
+C:\Users\srdja\Desktop\Kosarkaska rekreativna liga\BasketballRecreationalLeague\BasketballRecreationalLeague\bin\Debug\Notification.Wpf.xml

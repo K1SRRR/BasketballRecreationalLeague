@@ -9,8 +9,11 @@ namespace BasketballRecreationalLeague.Data
 {
     public class Database
     {
-        private string _connectionString = "Host=localhost;Port=5432;Username=postgres;Password=super;Database=Kosarkaska rekreativna liga;";
-
+        private readonly string _connectionString;
+        public Database(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
         public NpgsqlConnection GetConnection()
         {
             return new NpgsqlConnection(_connectionString);
