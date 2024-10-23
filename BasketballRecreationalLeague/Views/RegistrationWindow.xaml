@@ -1,0 +1,55 @@
+﻿<Window x:Class="BasketballRecreationalLeague.Views.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:BasketballRecreationalLeague.Views"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="350" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="220"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="0" Height="200" Margin="75,0,75,0" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="110"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Height="30">Username:</Label>
+            <Label Grid.Row="1" Grid.Column="0" Height="30">Password:</Label>
+            <Label Grid.Row="2" Grid.Column="0" Height="30">Confirm Password:</Label>
+            <Label Grid.Row="3" Grid.Column="0" Height="30">First Name:</Label>
+            <Label Grid.Row="4" Grid.Column="0" Height="30">Last Name:</Label>
+            <Label Grid.Row="5" Grid.Column="0" Height="30">Birth Day:</Label>
+            <TextBox x:Name="UsernameTextBox" Grid.Row="0" Grid.Column="1" Height="25" TextWrapping="Wrap" VerticalAlignment="Center"/>
+            <PasswordBox Name="txtPassword" Grid.Row="1" Grid.Column="1" Height="25" VerticalAlignment="Center"/>
+            <PasswordBox Name="confirmPassword" Grid.Row="2" Grid.Column="1" Height="25" VerticalAlignment="Center"/>
+            <TextBox x:Name="FirstNameTextBox" Grid.Row="3" Grid.Column="1" Height="25" TextWrapping="Wrap" VerticalAlignment="Center"/>
+            <TextBox x:Name="LastNameTextBox" Grid.Row="4" Grid.Column="1" Height="25" TextWrapping="Wrap" VerticalAlignment="Center"/>
+            <DatePicker x:Name="BirthDayDatePicker" DisplayDateEnd="{x:Static sys:DateTime.Today}" Grid.Row="5" Grid.Column="1" Height="25" VerticalAlignment="Center"/>
+
+            <Label Grid.Row="6" Grid.Column="0" Height="30">Visitor:</Label>
+            <RadioButton Grid.Row="6" x:Name="VisitorRadioButton" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 0 0 0"/>
+            <Label Grid.Row="6" Grid.Column="1" Height="30">Player:</Label>
+            <RadioButton Grid.Row="6" x:Name="PlayerRadioButton" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="42 0 0 0"/>
+
+        </Grid>
+
+        <Button Grid.Row="2" Click="RegisterClick" Content="Register" HorizontalAlignment="Left" VerticalAlignment="Center" Height="20" Width="60" Margin="268,0,0,0"/>
+        <Button Grid.Row="2" Click="CancelClick" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Center" Height="20" Width="60" Margin="125,0,0,0"/>
+    </Grid>
+</Window>

@@ -20,5 +20,13 @@ namespace BasketballRecreationalLeague.Services
         {
             return LeagueRepository.GetInstance().GetAllTeams(leagueId);
         }
+        public List<League> GetAll()
+        {
+            return LeagueRepository.GetInstance().GetAll();
+        }
+        public List<League> GetAllCurrent()
+        {
+            return LeagueRepository.GetInstance().GetAllCurrent();
+        }
     }
 }

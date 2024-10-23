@@ -1,0 +1,40 @@
+﻿<Page x:Class="BasketballRecreationalLeague.Views.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BasketballRecreationalLeague.Views"
+      mc:Ignorable="d" 
+      Title="HomePage" d:DesignHeight="1080" d:DesignWidth="1920">
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextElement}">
+                <Setter Property="FontFamily" Value="{StaticResource OwnerFontFamily}"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="LeagueGradeComboBox" Width="200" Height="60" HorizontalAlignment="Center" VerticalAlignment="Top"
+                  SelectedValuePath="PrintLeague" DisplayMemberPath="PrintLeague"
+                  SelectionChanged="LeagueSelectionChanged" Margin="0 10 0 0"/>
+        <DataGrid Grid.Row="1" Grid.Column="1" x:Name="LeagueTeamsDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" 
+                  ItemsSource="{Binding}" Margin="0 100 0 20">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header = "Team" Binding="{Binding Name}" />
+                <DataGridTextColumn Header = "Wins" Binding="{Binding Wins}" />
+                <DataGridTextColumn Header = "Loses" Binding="{Binding Loses}" />
+                <DataGridTextColumn Header = "Points +" Binding="{Binding PointsGiven}" />
+                <DataGridTextColumn Header = "Points -" Binding="{Binding PointsReceived}" />
+                <DataGridTextColumn Header = "+/-" Binding="{Binding PointsDifference}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

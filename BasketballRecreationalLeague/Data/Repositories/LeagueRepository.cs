@@ -48,5 +48,60 @@ namespace BasketballRecreationalLeague.Data.Repositories
             }
             return teamsInLeague;
         }
+
+        public List<League> GetAll()
+        {
+            List<League> leagues = new List<League>();
+            using (var connection = App.GetConnection())
+            {
+                connection.Open();
+                using (var command = new NpgsqlCommand("SELECT \"ID\", \"Grade\", \"Season\" FROM \"League\";", connection))
+                {
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            leagues.Add(new League
+                            {
+                                Id = reader.GetInt32(0),
+                                Grade = reader.GetString(1),
+                                Season = reader.GetString(2)
+                            });
+                        }
+                    }
+                }
+            }
+            return leagues;
+        }
+
+        public List<League> GetAllCurrent()
+        {
+            List<League> leagues = new List<League>();
+            int currentYear = DateTime.Now.Year;
+            using (var connection = App.GetConnection())
+            {
+                connection.Open();
+                using (var command = new NpgsqlCommand("SELECT \"ID\", \"Grade\", \"Season\" " +
+                    "FROM \"League\" " +
+                    "WHERE \"Season\" LIKE @CurrentYear || '%';", connection))
+                {
+                    command.Parameters.AddWithValue("@CurrentYear", currentYear.ToString());
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            leagues.Add(new League
+                            {
+                                Id = reader.GetInt32(0),
+                                Grade = reader.GetString(1),
+                                Season = reader.GetString(2)
+                            });
+                        }
+                    }
+                }
+            }
+            return leagues;
+        }
+
     }
 }

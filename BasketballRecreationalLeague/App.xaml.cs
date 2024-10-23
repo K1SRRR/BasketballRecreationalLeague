@@ -28,18 +28,23 @@ namespace BasketballRecreationalLeague
 
         private void ApplicationStartup(object sender, StartupEventArgs e)
         {
-             string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=super;Database=Kosarkaska rekreativna liga;";
 
             _services = new ServiceCollection();
-            _services.AddSingleton<NpgsqlConnection>(provider => new NpgsqlConnection(connectionString));
             _services.AddSingleton<PlayerRepository>();
             _services.AddSingleton<PlayerService>();
             _services.AddSingleton<PlayerController>();
             _services.AddSingleton<LeagueRepository>();
             _services.AddSingleton<LeagueService>();
             _services.AddSingleton<LeagueController>();
-
+            _services.AddSingleton<UserRepository>();
+            _services.AddSingleton<UserService>();
+            _services.AddSingleton<UserController>();
+            _services.AddSingleton<TeamRepository>();
+            _services.AddSingleton<TeamService>();
             _services.AddSingleton<TeamController>();
+            _services.AddSingleton<RefereeRepository>();
+            _services.AddSingleton<INotificationManager, NotificationManager>();
+
 
             _serviceProvider = _services.BuildServiceProvider();
 
@@ -52,7 +57,8 @@ namespace BasketballRecreationalLeague
         }
         public static NpgsqlConnection GetConnection()
         {
-            return _serviceProvider.GetRequiredService<NpgsqlConnection>();
+            string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=super;Database=Kosarkaska rekreativna liga;";
+            return new NpgsqlConnection(connectionString);
         }
     }
 }
